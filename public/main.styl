@@ -1,0 +1,85 @@
+// color1(alpha = 1.0)
+//   rgba(200,200,192,alpha)
+
+// color2(alpha = 1.0)
+//   rgba(100,100,96,alpha)
+
+light-color1(alpha = 1.0)
+  rgba(244,244,244,alpha)
+
+light-color2(alpha = 1.0)
+  rgba(211,211,211,alpha)
+
+light-color3(alpha = 1.0)
+  rgba(248,248,248,alpha)
+
+mid-color1(alpha = 1.0)
+  rgba(127,127,137,alpha)
+
+mid-color2(alpha = 1.0)
+  rgba(64,64,74,alpha)
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Maven Pro', sans-serif
+  font-size: 18px
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 4px 0px 8px 0px
+  text-align: center
+  color: mid-color2()
+}
+
+.application{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(244,24,24,1.0);
+}
+.left-bar{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 300px;
+    background-color: light-color1()
+    border-right: solid 1px light-color2()
+    padding: 0px 4px
+}
+.right-bar{
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    background-color: light-color1()
+    border-left: solid 1px light-color2()
+    padding: 0px 4px
+}
+.editor{
+    position:absolute;
+    top: 0px;
+    left: 300px;
+    bottom: 0px;
+    right: 300px;
+    background-color: light-color3()
+}
+
+input, select, button
+  display: block
+  width: 100%
+  padding: 4px
+  margin: 4px 0px
+  font-family: 'Maven Pro', sans-serif
+  color: mid-color1()
+  font-size: 18px
+
+input, select
+  border: solid 1px light-color2()
