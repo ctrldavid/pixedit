@@ -1,16 +1,9 @@
 h3 your projects
 select.js-select(size=10)
-  option(value=1) one
-  option(value=2) two
-  option(value=3) three
-  option(value=4) four
-  option(value=5) one
-  option(value=6) two
-  option(value=7) three
-  option(value=8) four
-  option(value=9) one
-  option(value=10) two
-  option(value=11) three
-  option(value=12) four
+  for project in projects
+    option(value=1)= project.get('name') || ''
+
 button.js-addtoggle create new
-input.js-input(type='text', placeholder="hide till that button is pressed")  
+input.js-input(type='text', placeholder="hide till that button is pressed")
+
+.js-test
